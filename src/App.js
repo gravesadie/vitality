@@ -27,10 +27,6 @@ function App() {
     fileInputRef.current.click();
   };
 
-  const handleButtonClick2 = () => {
-    
-  };
-
   const [selectedOption, setSelectedOption] = useState(null);
 
   const handleSelect = (option) => {
@@ -95,12 +91,12 @@ function App() {
             climbing shoes by months or even years, and is a worthwhile investment in your quality climbing apparel.
           </p>
         </div>
+      </div>
         
-        <div className="ResolingImage">
-          <img className="before-after-image" src={"https://blog.weighmyrack.com/wp-content/uploads/2019/12/Yosemite-Bum-Resoling-before-after-Photo.jpg"} 
-          alt={`Before & after resoling climbing shoes`}
-          width={"1000px"} />
-        </div>
+      <div className="ResolingImage">
+        <img className="before-after-image" src={"https://blog.weighmyrack.com/wp-content/uploads/2019/12/Yosemite-Bum-Resoling-before-after-Photo.jpg"} 
+        alt={`Before & after resoling climbing shoes`}
+        width={"1000px"} />
       </div>
       
       <div className="Upload">
@@ -125,10 +121,10 @@ function App() {
     <div className='Booking'>
       <h2> Book an appointment: </h2>
       <label for="fname">Name: </label>
-      <input type="text" id="name" name="name" style={{ fontFamily: "Quicksand", fontSize: "50pt", width:"600px", height:"100px"}}></input> <br></br>
+      <input type="text" id="name" name="name" style={{ fontFamily: "Quicksand", fontSize: "20pt", width:"300px", height:"30px", padding: "10px"}}></input> <br></br>
       <label for="fname">Contact email: </label>
-      <input type="text" id="email" name="email" style={{ fontFamily: "Quicksand", fontSize: "50pt", width:"600px", height:"100px"}}></input> <br></br>
-      
+      <input type="text" id="email" name="email" style={{ fontFamily: "Quicksand", fontSize: "20pt", width:"300px", height:"30px", padding: "10px"}}></input> <br></br>
+
       <p> Select a Location: {selectedOption}</p>
       
       <select className="selectBox" onChange={(e) => handleSelect(e.target.value)}>
@@ -150,30 +146,3 @@ function App() {
 }
 
 export default App;
-
-/*import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
-export default App;
-*/
